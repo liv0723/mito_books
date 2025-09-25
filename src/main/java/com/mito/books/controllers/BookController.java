@@ -16,6 +16,6 @@ public class BookController {
     public Book getBook() {
         this.iBookService = new BookServiceImpl();
 
-        return this.iBookService.getBookById(2);
+        return this.iBookService.getBookById(4);
     }
 }
