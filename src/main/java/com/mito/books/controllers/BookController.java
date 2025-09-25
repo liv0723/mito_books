@@ -1,5 +1,6 @@
 package com.mito.books.controllers;
 
+import com.mito.books.model.Book;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class BookController {
 
     @GetMapping("/books")
-    public String getBook() {
-        return "Harry Potter";
+    public Book getBook() {
+
+        return new Book(1, "Harry Potter");
+
     }
 }
